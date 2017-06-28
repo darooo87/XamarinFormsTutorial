@@ -1,5 +1,7 @@
-﻿using System;
+﻿using App2.Data;
+using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,53 +13,29 @@ namespace App2
     {
         public MainPage()
         {
-            InitializeComponent();
+            var list = new ListView();
+
+            list.ItemsSource = Person.People;
 
 
+            var cellTemplate = new DataTemplate(typeof(TextCell));
 
+            cellTemplate.SetBinding(TextCell.TextProperty, new Binding("Name"));
+            cellTemplate.SetBinding(TextCell.DetailProperty, new Binding("Title"));
+            cellTemplate.SetValue(TextCell.TextColorProperty, Color.Black);
+
+            list.ItemTemplate = cellTemplate;
+
+            list.ItemSelected += (sender, e) =>
+            {
+                if(e.SelectedItem != null)
+                {
+                    Debug.WriteLine(e.SelectedItem);
+                    list.SelectedItem = null;
+                }
+            };
+
+            Content = list;
         }
-
-        void OnColorSliderChanged(Object sender, EventArgs e)
-        {
-            var red = sliderRed.Value;
-            var green = sliderGreen.Value;
-            var blue = sliderBlue.Value;
-
-            box1.Color = Color.FromRgb(red, green, blue);
-        }
-
-
-        //public MainPage()
-        //{
-        //    var label1 = new Label()
-        //    {
-        //        Text = "Hello world label",
-        //        Font = Font.SystemFontOfSize(NamedSize.Large),
-        //    };
-
-        //    var entry1 = new Entry()
-        //    {
-        //        Placeholder = "enter text here",
-        //    };
-
-        //    var button1 = new Button()
-        //    {
-        //        Text = "Click me!!",
-
-        //    };
-
-        //    button1.Clicked += (sender, e) => {
-        //        label1.Text = $"user typed {entry1.Text}";
-        //    };
-
-        //    Content = new StackLayout()
-        //    {
-        //        Padding = 30,
-        //        Spacing = 30,
-        //        Children = { label1, entry1, button1}
-        //    };
-        //}
-
-   
     }
 }
