@@ -12,6 +12,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BlankPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CourseCell.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\Person.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
