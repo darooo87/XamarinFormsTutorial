@@ -13,29 +13,10 @@ namespace App2
     {
         public MainPage()
         {
-            var list = new ListView();
+            InitializeComponent();
 
-            list.ItemsSource = Person.People;
-
-
-            var cellTemplate = new DataTemplate(typeof(TextCell));
-
-            cellTemplate.SetBinding(TextCell.TextProperty, new Binding("Name"));
-            cellTemplate.SetBinding(TextCell.DetailProperty, new Binding("Title"));
-            cellTemplate.SetValue(TextCell.TextColorProperty, Color.Black);
-
-            list.ItemTemplate = cellTemplate;
-
-            list.ItemSelected += (sender, e) =>
-            {
-                if(e.SelectedItem != null)
-                {
-                    Debug.WriteLine(e.SelectedItem);
-                    list.SelectedItem = null;
-                }
-            };
-
-            Content = list;
+            
         }
+        
     }
 }

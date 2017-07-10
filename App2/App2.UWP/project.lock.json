@@ -22246,10 +22246,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "c:\\users\\dgrab\\documents\\visual studio 2017\\Projects\\App2\\App2\\App2.UWP\\App2.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\dgrab\\Source\\Repos\\XamarinFormsTutorial\\App2\\App2.UWP\\App2.UWP.csproj",
       "projectName": "App2.UWP",
-      "projectPath": "c:\\users\\dgrab\\documents\\visual studio 2017\\Projects\\App2\\App2\\App2.UWP\\App2.UWP.csproj",
-      "projectJsonPath": "c:\\users\\dgrab\\documents\\visual studio 2017\\Projects\\App2\\App2\\App2.UWP\\project.json",
+      "projectPath": "C:\\Users\\dgrab\\Source\\Repos\\XamarinFormsTutorial\\App2\\App2.UWP\\App2.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\dgrab\\Source\\Repos\\XamarinFormsTutorial\\App2\\App2.UWP\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {
