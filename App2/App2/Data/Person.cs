@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 
 namespace App2.Data
@@ -15,8 +16,8 @@ namespace App2.Data
             return $"{Name} {Title}";
         }
 
-        public static List<Person> People =
-        new List<Person>()
+        public static ObservableCollection<Person> People =
+        new ObservableCollection<Person>()
         {
             new Person(){ Name = "Test1", Title = "Detail1"},
             new Person(){ Name = "Test2", Title = "Detail2"},
