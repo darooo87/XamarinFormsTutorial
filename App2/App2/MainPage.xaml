@@ -4,24 +4,22 @@
              xmlns:local="clr-namespace:App2"
              x:Class="App2.MainPage">
 
-    <Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center"
-           x:Name="label1" />
-
-    <StackLayout>
-        <BoxView HorizontalOptions="FillAndExpand"
-             HeightRequest="100"
-             x:Name="box1"/>
+    <StackLayout BindingContext="{x:Reference slider}">
+        <StackLayout.Padding>
+            <OnPlatform x:TypeArguments="Thickness">
+                <OnPlatform.Android>50,50,50,50</OnPlatform.Android>
+                <OnPlatform.iOS>50,0,0,0</OnPlatform.iOS>
+            </OnPlatform>
+        </StackLayout.Padding>
         
-        <Label Text="Red"/>
-        <Slider Minimum="0" Maximum="1" x:Name="sliderRed" ValueChanged="OnColorSliderChanged"/>
-
-        <Label Text="Green"/>
-        <Slider Minimum="0" Maximum="1" x:Name="sliderGreen" ValueChanged="OnColorSliderChanged"/>
-
-        <Label Text="Blue"/>
-        <Slider Minimum="0" Maximum="1" x:Name="sliderBlue" ValueChanged="OnColorSliderChanged"/>
-
+        <BoxView Opacity="{Binding Value}" 
+                 Color="Blue"/>
+        
+        <Label HorizontalOptions="Center"            
+               Text="{Binding Value, StringFormat='{0:F2}'}"/>
+        
+        <Slider x:Name="slider"
+                HorizontalOptions="Fill"
+                 Value="0.5"/>
     </StackLayout>
 </ContentPage>
