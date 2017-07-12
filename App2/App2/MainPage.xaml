@@ -4,16 +4,30 @@
              xmlns:local="clr-namespace:App2"
              x:Class="App2.MainPage">
 
-    <StackLayout 
-        HorizontalOptions="Center" 
-        VerticalOptions="Center"
-        BindingContext="{x:Reference slider}">
+    <StackLayout HorizontalOptions="FillAndExpand" 
+                 Padding="10,10,10,10" 
+                 BindingContext="{x:Reference Name=slider}">
+
+        <Button Text="Next" 
+                TextColor="Indigo" 
+                BackgroundColor="Transparent" 
+                BorderColor="Transparent" 
+                Clicked="Button_Clicked"/>
         
-        <BoxView Color="Green" Opacity="{Binding Value}" />
-        <Label x:Name="displayValue" 
-               Text="{Binding Value, StringFormat='Value is {0:F2}' }"
-               Opacity="{Binding Value}" />
-        <Slider x:Name="slider" />
+        <Label x:Name="fonts" 
+               Text="{Binding Value, StringFormat='Font size: {0}'}"
+               TextColor="Black"/>
+
+        <Slider x:Name="slider" 
+                Minimum="16.0" 
+                Maximum="50.0" 
+                ValueChanged="slider_ValueChanged"/>
+        
+        <Label x:Name="sentence" 
+               Text="you cant blame gravity" 
+               FontSize="{Binding Value}"
+               TextColor="Black"/>
+        
     </StackLayout>
 
 </ContentPage>
