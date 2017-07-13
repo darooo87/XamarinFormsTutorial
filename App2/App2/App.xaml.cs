@@ -13,7 +13,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new InstaPage();
 		}
 
 		protected override void OnStart ()
