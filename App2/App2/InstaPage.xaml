@@ -3,22 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App2"
              x:Class="App2.InstaPage"
-             BackgroundColor="White">
+             BackgroundColor="Gray">
 
-    <StackLayout HorizontalOptions="Fill" >
-        <Label Text="nyc_photographer" Margin="10,10,10,10"/>
 
-        <Image Source="http://lorempixel.com/1920/1080/nature/3/"/>
-
-        <StackLayout Orientation="Horizontal" >
-            <Button Text="Like" BackgroundColor="White" TextColor="#127ac7"/>
-            <Button Text="Comment" BackgroundColor="White" TextColor="#127ac7"/>
-            <Button Text="Share" BackgroundColor="White" TextColor="#127ac7"/>
-        </StackLayout>
-        <StackLayout Padding="10,10,10,10">
-            <BoxView Color="#f0f0f0" HeightRequest="1"/>
-            <Label FontAttributes="Bold" Text="700 likes" TextColor="Black"/>
-            <Label TextColor="Black" Text="This is a shot yesterday in Skanor, Sweden, when driving home, form a couple of days of work in Denmark."/>
-        </StackLayout>
-    </StackLayout>
 </ContentPage>

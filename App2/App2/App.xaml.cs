@@ -13,7 +13,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new LoginGridPage();
+            MainPage = new AbsoluteLayoutPage();
 		}
 
 		protected override void OnStart ()
