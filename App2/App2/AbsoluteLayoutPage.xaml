@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.AbsoluteLayoutPage">
 
-    <AbsoluteLayout BackgroundColor="Aqua">
+    <!--<AbsoluteLayout BackgroundColor="Aqua">
         <BoxView Color="Silver" AbsoluteLayout.LayoutBounds="0.5,0.5,0.2,0.2" AbsoluteLayout.LayoutFlags="All"/>
         <Button AbsoluteLayout.LayoutBounds="0,1,1,0.1" AbsoluteLayout.LayoutFlags="All" Text="Submit"/>
-    </AbsoluteLayout>
+    </AbsoluteLayout>-->
 </ContentPage>

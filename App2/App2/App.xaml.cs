@@ -13,7 +13,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new AbsoluteLayoutPage();
+            MainPage = new AbsoluteFlowers();
 		}
 
 		protected override void OnStart ()
