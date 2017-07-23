@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Lists.ContextActions">
+    <ListView x:Name="listView">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Name}" Detail="{Binding Status}">
+                    <TextCell.ContextActions>
+                        <MenuItem Text="Call" Clicked="MenuItem_Clicked" />
+                        <MenuItem Text="Delete" Clicked="MenuItem_Clicked_1" IsDestructive="True"/>
+                    </TextCell.ContextActions>
+                </TextCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App2.MarkupExtenstions"
+             x:Class="App2.Images.ImagesPage">
+    <AbsoluteLayout>
+        <Image  x:Name="banner" 
+            Aspect="AspectFill"
+            AbsoluteLayout.LayoutBounds="0,0,1,1"
+            AbsoluteLayout.LayoutFlags="All"
+            Source="{local:EmbeddedImage ResourceId=App2.Droid.Images.background.jpg}"/>
+
+        <!--<Button AbsoluteLayout.LayoutBounds="0.2,0.2,32,32" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                Image="icon-pi.png"/>-->
+    </AbsoluteLayout>
+</ContentPage>

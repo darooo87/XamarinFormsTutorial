@@ -9,45 +9,92 @@
     <Import_RootNamespace>App2</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)AbsoluteFlowers.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Images\ImagesPage.xaml.cs">
+      <DependentUpon>ImagesPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\AbsoluteFlowers.xaml.cs">
       <DependentUpon>AbsoluteFlowers.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)AbsoluteLayoutPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\AbsoluteLayoutPage.xaml.cs">
       <DependentUpon>AbsoluteLayoutPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)AbsolutePrice.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\AbsolutePrice.xaml.cs">
       <DependentUpon>AbsolutePrice.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)GridPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\GridPage.xaml.cs">
       <DependentUpon>GridPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)InstaPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\InstaPage.xaml.cs">
       <DependentUpon>InstaPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)LoginGridPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\LoginGridPage.xaml.cs">
       <DependentUpon>LoginGridPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)LoginPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)TelephonePage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\RelativeExercise.xaml.cs">
+      <DependentUpon>RelativeExercise.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\relativepage.xaml.cs">
+      <DependentUpon>relativepage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\TelephonePage.xaml.cs">
       <DependentUpon>TelephonePage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\CellAppearance.xaml.cs">
+      <DependentUpon>CellAppearance.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\CellAppearanceCustom.xaml.cs">
+      <DependentUpon>CellAppearanceCustom.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\ContextActions.xaml.cs">
+      <DependentUpon>ContextActions.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\GroupingItems.xaml.cs">
+      <DependentUpon>GroupingItems.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\HandlingSelections.xaml.cs">
+      <DependentUpon>HandlingSelections.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\ListViewPage.xaml.cs">
+      <DependentUpon>ListViewPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\PullToRefresh.xaml.cs">
+      <DependentUpon>PullToRefresh.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\SearchBar.xaml.cs">
+      <DependentUpon>SearchBar.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MarkupExtenstions\EmbeddedImage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ContactGroup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)GridPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\GridPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)LoginPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -57,37 +104,111 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)InstaPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\InstaPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)TelephonePage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\TelephonePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)LoginGridPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\LoginGridPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsoluteLayoutPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\AbsoluteLayoutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsolutePrice.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\AbsolutePrice.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)AbsoluteFlowers.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\AbsoluteFlowers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\relativepage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\RelativeExercise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Layouts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Images\ImagesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Images\background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\ListViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\CellAppearance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\CellAppearanceCustom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\GroupingItems.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\HandlingSelections.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\ContextActions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\PullToRefresh.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\SearchBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

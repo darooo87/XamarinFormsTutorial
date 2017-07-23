@@ -1,4 +1,6 @@
-﻿using System;
+﻿using App2.Images;
+using App2.Lists;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +15,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new AbsoluteFlowers();
+            MainPage = new App2.Lists.SearchBar();
 		}
 
 		protected override void OnStart ()
