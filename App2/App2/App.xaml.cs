@@ -15,7 +15,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new Navigation.ContactsList());
+            MainPage = new Forms.TableView();
 		}
 
 		protected override void OnStart ()
