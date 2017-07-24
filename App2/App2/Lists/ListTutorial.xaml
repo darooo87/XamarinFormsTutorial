@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Lists.ListTutorial">
+    <StackLayout>
+        <SearchBar x:Name="searchBar" TextChanged="searchBar_TextChanged" />
+        <ListView x:Name="listView" ItemSelected="listView_ItemSelected" IsPullToRefreshEnabled="True" Refreshing="listView_Refreshing">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="{Binding ImageUrl}"/>
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Name}"/>
+                                <Label Text="{Binding Status}"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <ViewCell.ContextActions>
+                            <MenuItem Text="Delete"/>
+                            <MenuItem Text="Update"/>
+                        </ViewCell.ContextActions>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

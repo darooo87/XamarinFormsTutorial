@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Navigation.ContactDetail"
+             Title="Contact Detail">
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Name"/>
+            <Editor Text="{Binding Name}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Status"/>
+            <Editor Text="{Binding Status}"/>
+        </StackLayout>
+        <Button Text="Save" Clicked="Button_Clicked"/>
+    </StackLayout>
+</ContentPage>

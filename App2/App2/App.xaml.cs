@@ -15,7 +15,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new App2.Lists.SearchBar();
+            MainPage = new NavigationPage(new Navigation.ContactsList());
 		}
 
 		protected override void OnStart ()
