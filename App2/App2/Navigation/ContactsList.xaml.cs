@@ -52,11 +52,16 @@ namespace App2.Navigation
             await Navigation.PushAsync(new ContactDetail(contact));
         }
 
-        private void Delete_Clicked(object sender, EventArgs e)
+        private async void Delete_Clicked(object sender, EventArgs e)
         {
             var contact = ((MenuItem)sender).CommandParameter as Models.Contact;
 
-            list.Remove(contact);
+            var result = await DisplayAlert($"Deleting {contact.Name}", "Are you sure?", "Delete", "Cancel");
+
+            if (result)
+            {
+                list.Remove(contact);
+            }
         }
     }
 }
