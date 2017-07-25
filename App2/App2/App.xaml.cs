@@ -15,7 +15,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new Data.DataFeed();
+            MainPage = new Data.ApplicationSettings();
 		}
 
 		protected override void OnStart ()
