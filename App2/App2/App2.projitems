@@ -41,6 +41,10 @@
       <DependentUpon>TableView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Images\Exercise.xaml.cs">
+      <DependentUpon>Exercise.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Images\ImagesPage.xaml.cs">
       <DependentUpon>ImagesPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -322,5 +326,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Images\Exercise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Images\Left.png" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Images\Right.png" />
   </ItemGroup>
 </Project>

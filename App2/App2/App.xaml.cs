@@ -15,7 +15,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new Forms.TableView();
+            MainPage = new Images.Exercise();
 		}
 
 		protected override void OnStart ()
