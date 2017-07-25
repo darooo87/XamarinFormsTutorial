@@ -9,6 +9,11 @@
     <Import_RootNamespace>App2</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\DataFeed.xaml.cs">
+      <DependentUpon>DataFeed.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\XamarinFeed.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\DateCell.xaml.cs">
       <DependentUpon>DateCell.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -128,6 +133,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MarkupExtenstions\EmbeddedImage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ContactGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Person.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Navigation\ContactDetail.xaml.cs">
       <DependentUpon>ContactDetail.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -336,5 +342,11 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Images\Left.png" />
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Images\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Data\DataFeed.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

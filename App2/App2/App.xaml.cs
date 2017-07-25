@@ -15,7 +15,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new Images.Exercise();
+            MainPage = new Data.DataFeed();
 		}
 
 		protected override void OnStart ()
