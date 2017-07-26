@@ -16,23 +16,7 @@ namespace App2.Data
 		{
 			InitializeComponent ();
 
-            if (Application.Current.Properties.ContainsKey("Name"))
-            {
-                title.Text = Application.Current.Properties["Name"].ToString();
-            }
-
-
-            if (Application.Current.Properties.ContainsKey("Notifications"))
-            {
-                notificationsEnabled.On = bool.Parse(Application.Current.Properties["Notifications"].ToString());
-            }
+            BindingContext = Application.Current;
         }
-
-        private void onChange(object sender, EventArgs e)
-        {
-            Application.Current.Properties["Name"] = title.Text;
-            Application.Current.Properties["Notifications"] = notificationsEnabled.On;
-        }
-
     }
 }

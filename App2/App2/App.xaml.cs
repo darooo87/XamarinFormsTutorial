@@ -15,22 +15,51 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new Data.ApplicationSettings();
+            MainPage = new Data.SQLite();
 		}
 
 		protected override void OnStart ()
 		{
-			// Handle when your app starts
 		}
 
 		protected override void OnSleep ()
 		{
-			// Handle when your app sleeps
 		}
 
 		protected override void OnResume ()
 		{
-			// Handle when your app resumes
 		}
-	}
+
+        public string Name
+        {
+            get
+            {
+                if (Application.Current.Properties.ContainsKey("Name"))
+                {
+                    return Application.Current.Properties["Name"].ToString();
+                }
+                return "";
+            }
+            set
+            {
+                Application.Current.Properties["Name"] = value;
+            }
+        }
+
+        public bool Notifications
+        {
+            get
+            {
+                if (Application.Current.Properties.ContainsKey("Notifications"))
+                {
+                    return bool.Parse(Application.Current.Properties["Notifications"].ToString());
+                }
+                return false;
+            }
+            set
+            {
+                Application.Current.Properties["Notifications"] = value;
+            }
+        }
+    }
 }
