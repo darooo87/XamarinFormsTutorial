@@ -28,7 +28,9 @@ namespace App2
 
 		protected override void OnResume ()
 		{
+
 		}
+
 
         public string Name
         {
