@@ -15,7 +15,7 @@ namespace App2
 		{
 			InitializeComponent();
 
-            MainPage = new Data.SQLite();
+            MainPage = new Resources.ResourceDictionary();
 		}
 
 		protected override void OnStart ()
