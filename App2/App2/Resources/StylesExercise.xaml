@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Resources.StylesExercise">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="keypad" TargetType="Button">
+                <Setter Property="BorderRadius" Value="30"/>
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="TextColor" Value="#28282c"/>
+                <Setter Property="BackgroundColor" Value="#fff"/>
+            </Style>
+            <Style x:Key="dialbtn" TargetType="Button">
+                <Setter Property="TextColor" Value="#28282c"/>
+                <Setter Property="BackgroundColor" Value="#96ca2d"/>
+                <Setter Property="FontSize" Value="30"/>
+                <Setter Property="BorderRadius" Value="30"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid RowSpacing="10" ColumnSpacing="10" Padding="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" 
+               Grid.ColumnSpan="3" 
+               Text="1234" 
+               TextColor="White" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" 
+               FontSize="50"/>
+
+        <Button Style="{StaticResource keypad}" Grid.Row="1" Grid.Column="0" Text="1" />
+        <Button Style="{StaticResource keypad}" Grid.Row="1" Grid.Column="1" Text="2" />
+        <Button Style="{StaticResource keypad}" Grid.Row="1" Grid.Column="2" Text="3" />
+
+        <Button Style="{StaticResource keypad}" Grid.Row="2" Grid.Column="0" Text="4" />
+        <Button Style="{StaticResource keypad}" Grid.Row="2" Grid.Column="1" Text="5" />
+        <Button Style="{StaticResource keypad}" Grid.Row="2" Grid.Column="2" Text="6" />
+
+        <Button Style="{StaticResource keypad}" Grid.Row="3" Grid.Column="0" Text="7" />
+        <Button Style="{StaticResource keypad}" Grid.Row="3" Grid.Column="1" Text="8" />
+        <Button Style="{StaticResource keypad}" Grid.Row="3" Grid.Column="2" Text="9" />
+
+        <Button Style="{StaticResource keypad}" Grid.Row="4" Grid.Column="1" Text="0" />
+
+        <Button Style="{StaticResource dialbtn}" Grid.Row="5" Grid.ColumnSpan="3" Text="Dial" />
+    </Grid>
+</ContentPage>

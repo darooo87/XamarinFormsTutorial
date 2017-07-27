@@ -9,27 +9,27 @@ using Xamarin.Forms;
 
 namespace App2
 {
-	public partial class App : Application
-	{
-		public App ()
-		{
-			InitializeComponent();
+    public partial class App : Application
+    {
+        public App()
+        {
+            InitializeComponent();
 
-            MainPage = new Resources.ResourceDictionary();
-		}
+            MainPage = new Menu.MenuPage();
+        }
 
-		protected override void OnStart ()
-		{
-		}
+        protected override void OnStart()
+        {
+        }
 
-		protected override void OnSleep ()
-		{
-		}
+        protected override void OnSleep()
+        {
+        }
 
-		protected override void OnResume ()
-		{
+        protected override void OnResume()
+        {
 
-		}
+        }
 
 
         public string Name
