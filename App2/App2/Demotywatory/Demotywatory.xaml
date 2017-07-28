@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.Demotywatory.Demotywatory" Title="Test">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout Padding="0,20,0,0" BackgroundColor="Black">
+                <ListView x:Name="menuList">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Label Text="{Binding Label}" 
+                                       TextColor="White" 
+                                       FontAttributes="Bold" 
+                                       FontSize="15"
+                                       VerticalOptions="Center" 
+                                       Margin="20,0,0,0"/>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+           </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage Title="Empty">
+            <Label Text="detail page"/>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>

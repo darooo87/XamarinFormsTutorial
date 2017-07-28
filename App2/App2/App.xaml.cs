@@ -15,7 +15,10 @@ namespace App2
         {
             InitializeComponent();
 
-            MainPage = new Menu.MenuPage();
+            MainPage = new Demotywatory.Demotywatory();
+
+            MainPage.SetValue(NavigationPage.BarBackgroundColorProperty, Color.Black);
+            MainPage.SetValue(NavigationPage.BarTextColorProperty, Color.White);
         }
 
         protected override void OnStart()
